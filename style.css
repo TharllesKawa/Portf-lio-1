@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #171717;
+    font-family: 'DM Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+/*------------HEADER------------*/
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px 60px 20px 60px;
+}
+
+.navbar-brand{
+    font-weight: 700 !important;
+font-size: 36px !important;
+line-height: 47px !important;
+
+
+color: #FFFFFF !important;
+}
+
+.nav-link {
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    line-height: 23px !important;
+
+    color: #FFFFFF !important;
+}
+
+.nav-link:hover {
+    color: #27AE60 !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(http://dce.rocketausgate.com/_images/menu-icon.png);
+    
+}
+
+.navbar-light .navbar-toggler {
+    border-color: transparent !important;
+    color: transparent !important;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar {
+        padding: 5px 10px 5px 10px;
+    }
+}
+
+/*------------FIM HEADER------------*/
+
+
+
+
+/*------------MAIN------------*/
+
+.container-main {
+    padding: 20px 100px 20px 100px;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-main h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 62px;
+
+    color: #FFFFFF;
+}
+
+.container-main p {
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 23px;
+
+    color: #828282;
+}
+
+.container-main .download {
+    margin-top: 20px;
+    margin-right: 10px;
+
+    width: 143px;
+    height: 42px;
+    background: #27AE60;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #FFFFFF;
+    border: 1px solid #27AE60;
+}
+
+.container-main .download:hover {
+    transition: ease-out 0.5s;
+    background-color: transparent;
+}
+
+.container-main .learn {
+    width: 143px;
+    height: 42px;
+
+    background: #171717;
+
+
+    border: 1px solid #F2F2F2;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #FFFFFF;
+}
+
+.container-main .learn:hover {
+    transition: ease-in 0.5s;
+    background-color: #fff;
+    color: #171717;
+}
+
+.image img {
+    border-radius: 50%;
+    width: 80%;
+    border: 1px solid #4F4F4F;
+    background: rgba(30, 29, 29, 0.2);
+    border: 20px solid #202020;
+}
+
+@media (max-width: 991.98px) {
+    .container-main {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 5px 20px 5px 20px;
+    }
+    
+    .image img {
+        margin-top: 50px;
+    }
+}
+
+/*------------FIM MAIN------------*/
+
+
+
+
+
+/*-----------ABOUT------------*/
+
+#about {
+    margin-top: 60px;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 62px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.about-p {
+    margin-top: 38px;
+    
+    width: 60%;
+    height: 136px;
+
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 23px;
+    text-align: center;
+
+    opacity: .7;
+
+    color: #FFFFFF;
+}
+
+.cards-about {
+    width: 70%;
+    margin-top: 38px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card-about {
+    width: 172px;
+    height: 129px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    color: #fff;
+}
+
+.card-about h5 {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 23px;
+    margin-top: 18px;
+}
+
+.card-about p {
+    margin-top: -10px;
+    opacity: .5;
+}
+
+@media (max-width: 991.98px) {
+    .about-p {
+        width: 90%;
+    }
+
+    .card-about {
+        margin-top: 120px;
+    }
+}
+
+
+
+/*-----------FIM ABOUT------------*/
+
+
+
+
+/*-----------Services------------*/
+
+#services {
+    margin-top: 120px;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#services h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 62px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.cards-services {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cards-services-1 {
+    margin-top: 102px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    width: 300px;
+    height: 200px;
+
+    background-color: #212121;
+    padding-left: 35px;
+    padding-bottom: 35px;
+}
+
+.cards-services-1 img {
+    padding-top: 35px;
+}
+
+.cards-services-1 h5 {
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 1.9rem;
+    line-height: 47px;
+
+    color: #535353;
+}
+
+.cards-services-1:hover {
+    transition: ease-in-out 0.5s;
+    transform: scale(1.2);
+}
+
+.cards-services-1::backdrop {
+    transition: ease-in-out 0.5s;
+    transform: scale(1);
+}
+
+/*-----------FIM Services------------*/
+
+
+
+
+
+/*-----------Skills------------*/
+
+#skills {
+    margin-top: 141px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.text-skills h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 62px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.card-skills-center {
+    margin-top: 73px;
+
+    width: 80%;
+    height: 200px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    background-color: #212121;
+    border: 1px solid #333333;
+}
+
+.card-skills {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card-skills h1 {
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 94px;
+    text-align: center;
+
+
+    color: #4F4F4F;
+}
+
+.card-skills p {
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 31px;
+    text-align: center;
+
+
+    color: #27AE60;
+
+}
+
+@media (max-width: 991.98px) {
+    .card-skills-center {
+        padding: 50px 0px 50px 0px;
+        height: 100%;
+    }
+
+    .card-skills {
+        height: 100%;
+    }
+}
+
+/*-----------FIM Skills------------*/
+
+
+
+
+/*-----------Contact------------*/
+
+
+#contact {
+    margin-top: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#contact h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 62px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+form {
+    width: 100%;
+    margin-top: 82px;
+    width: 100%;
+    height: 330px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+form input {
+    width: 300px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #4F4F4F;
+    margin-bottom: 75px;
+
+    color: #fff;
+}
+
+form input.input-1 {
+    margin-right: 30px;
+}
+
+.button-form {
+    width: 143px;
+    height: 42px;
+    background: #27AE60;
+    border: none;
+    color: #fff;
+}
+
+.button-form:hover {
+    border: 1px solid #27AE60;
+    transition: ease-out 0.5s;
+    background-color: transparent;
+}
+
+@media (max-width: 991.98px) {
+    .input-names {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .input-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    form {
+        height: 100%;
+    }
+
+    form input.input-1 {
+        margin-right: 0;
+    }
+}
+
+
+/*-----------FIM Contact------------*/
+
+footer {
+    width: 100%;
+    margin-top: 160px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 18px;
+
+    color: #4F4F4F;
+}
