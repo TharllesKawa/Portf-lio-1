@@ -12,6 +12,7 @@ body {
     background-color: #171717;
     font-family: 'DM Sans', sans-serif;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 /*------------HEADER------------*/
@@ -309,6 +310,8 @@ color: #FFFFFF !important;
     background-color: #212121;
     padding-left: 35px;
     padding-bottom: 35px;
+
+    animation: cardshover 1s ease-in-out;
 }
 
 .cards-services-1 img {
@@ -324,16 +327,20 @@ color: #FFFFFF !important;
     color: #535353;
 }
 
-.cards-services-1:hover {
-    transition: ease-in-out 0.5s;
-    transform: scale(1.2);
-}
 
-.cards-services-1::backdrop {
-    transition: ease-in-out 0.5s;
-    transform: scale(1);
-}
+@keyframes cardshover {
+    0% {
+        scale: 1;
+    }
 
+    50% {
+        scale: 1.1;
+    }
+
+    100% {
+        scale: 1.2;
+    }
+}
 /*-----------FIM Services------------*/
 
 
